@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var nottingham = new google.maps.LatLng(51.507351, -0.127758);
+    var chennai = new google.maps.LatLng(13.022736, 80.175726);
 
     var style = [
         {
@@ -73,7 +73,7 @@ function initialize() {
 
     var mapOptions = {
         // SET THE CENTER
-        center: nottingham,
+        center: chennai,
 
         // SET THE MAP STYLE & ZOOM LEVEL
         mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -102,10 +102,10 @@ function initialize() {
 
     //CREATE A CUSTOM PIN ICON
     var marker_image ='plugins/google-map/images/marker.png';
-    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(74, 73));
+    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(50, 50));
 
     marker = new google.maps.Marker({
-        position: nottingham,
+        position: chennai,
         map: map,
         icon: pinIcon,
         title: 'LAN Innovations'
