@@ -514,7 +514,7 @@ a:focus, a:hover {
   .navigation .navbar-light .navbar-nav .nav-item .nav-link {
     color: #000;
   }
-  .navigation .logo-white {
+  .navigation .lan {
     display: none;
   }
   .navigation .logo-default {
@@ -535,7 +535,7 @@ a:focus, a:hover {
   color: #000;
 }
 
-.sticky-header .logo-white {
+.sticky-header .lan {
   display: none;
 }
 
@@ -1135,7 +1135,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Portfolio section
+   section
 ==================================================================*/
 .portfolio-filter {
   margin-bottom: 40px;
@@ -1220,7 +1220,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Services section
+  Products section
 ==================================================================*/
 .services {
   padding: 100px 0 130px;
@@ -1257,7 +1257,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Services section 2
+  Products section 2
 ==================================================================*/
 .service-2 .service-item {
   border: 1px solid #eee;
@@ -1379,7 +1379,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Our Team
+  Our Customers
   ==================================================================*/
 .team {
   padding: 100px 0;
