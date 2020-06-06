@@ -432,11 +432,11 @@ a:focus, a:hover {
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
-  color: #28ABE3;
+  color: rgb(255, 255, 255);
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #28ABE3;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 991px) {
@@ -466,6 +466,13 @@ a:focus, a:hover {
   -webkit-transform-origin: top;
           transform-origin: top;
   background: #000;
+}
+
+.navigation .dropdown-header {
+  visibility: visible;
+  opacity: 1;
+  font-size: px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -501,7 +508,7 @@ a:focus, a:hover {
 }
 
 .navigation .dropdown-item:hover {
-  color: #fff;
+  color: rgb(255, 255, 0);
   background: transparent;
   padding-left: 12px;
 }
