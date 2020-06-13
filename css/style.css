@@ -421,7 +421,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: rgb(30, 221, 255);
   font-size: 14px;
   line-height: 26px;
   padding: 20px 15px;
@@ -433,12 +433,12 @@ a:focus, a:hover {
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
-  color: rgb(255, 255, 255);
+  color: rgb(30, 221, 255);
   font-weight: bold
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: rgb(255, 255, 255);
+  color: rgb(30, 221, 255);
   font-weight: bold
 }
 
@@ -451,6 +451,7 @@ a:focus, a:hover {
 .navigation .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
+  color: rgb(255, 255, 0);
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -469,13 +470,13 @@ a:focus, a:hover {
   -webkit-transform-origin: top;
           transform-origin: top;
   background: #000;
+  color: rgb(255, 255, 0);
 }
 
 .navigation .dropdown-header {
   visibility: visible;
   opacity: 1;
-  font-size: px;
-  text-align: center;
+  font-size: 14px;
 }
 
 @media (max-width: 991px) {
@@ -504,6 +505,25 @@ a:focus, a:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .columns {
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .columns {
+    -moz-column-count: 2;
+    /* Firefox */
+    -webkit-column-count: 2;
+    /* Safari and Chrome */
+    column-count: 2;
+    width: 700px;
+    height:300px;
+  }
+}
+
 .navigation .dropdown-item {
   color: rgba(255, 255, 255, 0.8);
   transition: .2s ease;
@@ -514,6 +534,14 @@ a:focus, a:hover {
   color: rgb(255, 255, 0);
   background: transparent;
   padding-left: 12px;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+ transform: translateY(3px);
 }
 
 @media (max-width: 991px) {
