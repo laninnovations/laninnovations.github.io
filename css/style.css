@@ -428,15 +428,18 @@ a:focus, a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: .2s ease-in-out 0s;
+  font-weight: bold
 }
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
   color: rgb(255, 255, 255);
+  font-weight: bold
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: rgb(255, 255, 255);
+  font-weight: bold
 }
 
 @media (max-width: 991px) {
