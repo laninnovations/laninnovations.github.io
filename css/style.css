@@ -581,6 +581,28 @@ a:focus, a:hover {
   display: block;
 }
 
+.sticky-nav.fixed-nav ul:after {
+  height: 0;
+  width: 0; }
+ .sticky-nav.fixed-nav ul li.active a:after,  .sticky-nav.fixed-nav ul li:hover a:after {
+  bottom: 0; }
+ .sticky-nav.fixed-nav .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  z-index: 10;
+  width: 100vw;
+  max-width: inherit;
+  -webkit-box-shadow: 0px -4px 26px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px -4px 26px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: top 0.3s linear;
+  -o-transition: top 0.3s linear;
+  transition: top 0.3s linear; } 
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }     
+
 .navbar-brand {
   height: auto;
   padding: 8px 0;
@@ -2435,3 +2457,5 @@ a:focus, a:hover {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
