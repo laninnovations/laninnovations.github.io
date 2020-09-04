@@ -79,7 +79,7 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 
         // SET THE BACKGROUND COLOUR
-        //backgroundColor:"#000",
+        backgroundColor:"#000",
 
         // REMOVE ALL THE CONTROLS EXCEPT ZOOM
         zoom:17,
@@ -96,16 +96,16 @@ function initialize() {
     }
     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
     // SET THE MAP TYPE
-    var mapType = new google.maps.StyledMapType(style, {name:"Grayscale"});
-    map.mapTypes.set('grey', mapType);
-    map.setMapTypeId('grey');
+    //var mapType = new google.maps.StyledMapType(style, {name:"Grayscale"});
+    //map.mapTypes.set('grey', mapType);
+    //map.setMapTypeId('grey');
 
     //CREATE A CUSTOM PIN ICON
-    var marker_image ='plugins/google-map/images/marker.png';
-    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(50, 50));
+    var marker_image ='plugins/google-map/images/lan_marker.png';
+    var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(40, 70));
 
     marker = new google.maps.Marker({
-        position: chennai,
+        position: lan,
         map: map,
         icon: pinIcon,
         title: 'LAN Innovations'
