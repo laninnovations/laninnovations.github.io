@@ -6,7 +6,7 @@ window.marker = null;
 function initialize() {
     var map;
 
-    var chennai = new google.maps.LatLng(13.022736, 80.175726);
+    var lan = new google.maps.LatLng(25.1219179,55.3769668);
 
     var style = [
         {
@@ -73,13 +73,13 @@ function initialize() {
 
     var mapOptions = {
         // SET THE CENTER
-        center: chennai,
+        center: lan,
 
         // SET THE MAP STYLE & ZOOM LEVEL
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 
         // SET THE BACKGROUND COLOUR
-        backgroundColor:"#000",
+        //backgroundColor:"#000",
 
         // REMOVE ALL THE CONTROLS EXCEPT ZOOM
         zoom:17,
